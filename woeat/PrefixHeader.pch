@@ -1,0 +1,67 @@
+//
+//  PrefixHeader.pch
+//  woeat
+//
+//  Created by liubin on 16/10/11.
+//  Copyright © 2016年 liubin. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+//define this constant if you want to use Masonry without the 'mas_' prefix
+#define MAS_SHORTHAND
+
+//define this constant if you want to enable auto-boxing for default syntax
+#define MAS_SHORTHAND_GLOBALS
+
+#import "Masonry.h"
+#import "NSString+Addition.h"
+
+#define  UICOLOR(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
+#define CONVERT_TO_TYPE(v, type) ((type)(v))
+
+#define CHECK_NULL_STRING(s) ((s) ? (s) : @"")
+
+#define ENCODING_UTF8_PERCENT(s) ([s stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]] ? [s stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]] : @"")
+
+#define MAKE_STRING_NOT_EMPTY(s) if (!s.length) s=@" ";
+
+
+#define DARK_ORANGE_COLOR UICOLOR(179,76,69)
+
+
+#define USER_DEFAULT_PHONE  @"USER_DEFAULT_PHONE"
+#define USER_DEFAULT_TOKEN  @"USER_DEFAULT_TOKEN"
+
+#define TEST_Latitude   @"34.00"
+#define TEST_Longitude  @"-118.00"
+
+#define NOTIFICATION_PROFILE_IMAGE_RELOAD      @"NOTIFICATION_PROFILE_IMAGE_RELOAD"
+#define NOTIFICATION_LOCATION_SELECT_CHANGE    @"NOTIFICATION_LOCATION_SELECT_CHANGE"
+#define NOTIFICATION_KITCHEN_FAV_CHANGE        @"NOTIFICATION_KITCHEN_FAV_CHANGE"
+#define NOTIFICATION_KITCHEN_ORDER_CHANGE      @"NOTIFICATION_KITCHEN_ORDER_CHANGE"
+
+
+#define URL_USER_AGREEMENT  @"https://api.woeatapp.com/WebPage/View/CONSUMER_APP_TNC"
+#define URL_USER_DECLARE    @"https://api.woeatapp.com/WebPage/View/CONSUMER_APP_DISCLAIMER"
+#define URL_ABOUT           @"https://api.woeatapp.com/WebPage/View/CONSUMER_APP_ABOUTUS"
+
+#define URL_REGISTER_KITCHEN_COMPLETE  @"https://api.woeatapp.com/WebPage/UpgradeToKitchenSuccess"
+
+#define URL_DISCOVER  @"https://api.woeatapp.com/WebPage/Discovery"
+
+#define UMENG_APP_KEY @"58aa4e867666132a140021ca"
+
+//#define TEST_AUTO_LOGIN 1
+
+//#define TEST_LOCAL_NET 1
+
+
+//#define URL_CACHING 1
+
+#endif /* PrefixHeader_pch */
