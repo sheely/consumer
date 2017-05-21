@@ -433,7 +433,7 @@
 {
     [super viewWillAppear:animated];
 
-    _rightButton = [self addRightNavButton:@"收藏" image:@"icon_collect" target:self selector:@selector(rightButtonTapped:)];
+    _rightButton = [self addRightNavButton:@"" image:@"icon_collect" target:self selector:@selector(rightButtonTapped:)];
     _rightButton.hidden = YES;
     
     [[WEMainTabBarController sharedInstance] setTabBarHidden:YES animated:NO];

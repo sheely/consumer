@@ -172,7 +172,7 @@
     WEHomeKitchenViewController *c = [WEHomeKitchenViewController new];
     c.kitchenId = kitchenId;
     UINavigationController *nav = self.navigationController;
-    [nav popViewControllerAnimated:NO];
+    //[nav popViewControllerAnimated:NO];
     [nav pushViewController:c animated:YES];
 }
 

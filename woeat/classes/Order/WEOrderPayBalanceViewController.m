@@ -73,7 +73,7 @@
     orderList.font = [UIFont systemFontOfSize:14];
     orderList.color = [UIColor blackColor];
     orderList.middleSpace = 20;
-    orderList.maxWidth = 170;
+    orderList.maxWidth = 240;
     orderList.vSpace = 8;
     orderList.vSpaceLine = 6;
     NSString *totalValue = [NSString stringWithFormat:@"$%.2f", _order.TotalValue];
@@ -99,7 +99,7 @@
     balance.font = [UIFont systemFontOfSize:18];
     balance.color = [UIColor blackColor];
     balance.middleSpace = 0;
-    balance.maxWidth = 170;
+    balance.maxWidth = 240;
     NSString *balanceValue = [NSString stringWithFormat:@"$%.2f", _currentBalance];
     [balance setUpLeftText:@[@"我的余额"] rightText:@[balanceValue]];
     [superView addSubview:balance];
